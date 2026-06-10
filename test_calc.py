@@ -21,3 +21,7 @@ def test_comma_separated_numbers():
     assert add("6,7") == 13
     assert add("4,2,3") == 9
 
+def test_new_line_separated_numbers():
+    assert add("1\n2\n3\n4") == 10
+    assert add("6\n7") == 13
+    assert add("4\n2\n3") == 9
