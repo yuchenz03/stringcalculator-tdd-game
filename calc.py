@@ -13,6 +13,8 @@ def add(numbers):
     total = 0
     numbers = numbers.replace(delim, ",")
     for num in numbers.split(","):
+        if int(num) < 0:
+            raise ValueError(f"negatives not allowed: {num}")
         total += int(num)
     return total
 
