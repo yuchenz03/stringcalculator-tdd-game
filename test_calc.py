@@ -25,3 +25,8 @@ def test_new_line_separated_numbers():
     assert add("1\n2\n3\n4") == 10
     assert add("6\n7") == 13
     assert add("4\n2\n3") == 9
+
+def test_custom_delimiters():
+    assert add("//;\n1;2") == 3
+    assert add("//!\n1!2!3!4") == 10
+    assert add("//?\n6?7?8") == 21
