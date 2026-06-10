@@ -40,3 +40,6 @@ def test_negative_numbers():
     with pytest.raises(ValueError, match="negatives not allowed: -8"): 
         add("//?\n6?7?-8")
 
+def test_large_nums_ignored():
+    assert add("1\n2\n3\n4\n1001") == 10
+    assert add("6,7,1002") == 13
