@@ -10,5 +10,14 @@ from calc import add
 
 def test_example_string_returns_zero():
     assert add("") == 0  # uncomment to test
+
+def test_single_number():
     assert add("1") == 1
+    assert add("2") == 2
+    assert add("10") == 10
+
+def test_comma_separated_numbers():
+    assert add("1,2,3,4") == 10
+    assert add("6,7") == 13
+    assert add("4,2,3") == 9
 
