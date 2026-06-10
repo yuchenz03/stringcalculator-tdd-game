@@ -9,5 +9,4 @@ from calc import add
 # Example:
 
 def test_example_string_returns_zero():
-#    assert add("") == 0  # uncomment to test
-    pass
+    assert add("") == 0  # uncomment to test
